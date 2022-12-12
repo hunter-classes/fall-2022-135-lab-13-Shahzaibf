@@ -41,3 +41,13 @@ TEST_CASE("Task D"){
     test = "ABC123";
     CHECK(isAlphanumeric(test) == true);
 }
+
+TEST_CASE("Task E"){
+    std::string teste;
+    teste = "";
+    CHECK(nestedParens(teste) == true);
+    teste = "(((";
+    CHECK(nestedParens(teste) == false);
+    teste = "a(b)c";
+    CHECK(nestedParens(teste) == false);
+}

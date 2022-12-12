@@ -39,3 +39,15 @@ bool isAlphanumeric(std::string s){
         return false;
     }
 }
+
+bool nestedParens(std::string s){
+    if(s.length() == 0){
+        return true;
+    } else if(s.length() < 2){
+        return false;
+    } else if(s[0] == '(' && s[s.length() - 1] == ')'){
+        return nestedParens(s.substr(1,s.length() - 2));
+    } else {
+        return false;
+    }
+}

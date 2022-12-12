@@ -18,3 +18,17 @@ TEST_CASE("Task B"){
     x = sumRange(8,10);
     CHECK(x == 27);
 }
+
+TEST_CASE("Task C"){
+    int size = 5;
+    int *arr = new int[size];
+    arr[0] = 2;
+    arr[1] = -1;
+    arr[2] = 5;
+    arr[3] = 9;
+    arr[4] = 1;
+    int sum = sumArray(arr, size);
+    CHECK(sum == 16);
+    sum = sumArray(arr, 2);
+    CHECK(sum == 1);
+}

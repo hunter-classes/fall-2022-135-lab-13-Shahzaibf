@@ -32,6 +32,8 @@ int main(){
     std::cout << "Sum is " << sum2 << std::endl;  // Sum is 34
 
     delete[] arr;         // deallocate it
-    
+
+    std::cout << isAlphanumeric("ABCD") << std::endl;        // true (1)
+    std::cout << isAlphanumeric("Abcd1234xyz") << std::endl; // true (1)
     return 0;
 }

@@ -29,3 +29,13 @@ int sumArrayInRange(int *arr, int left, int right){
         return arr[left]+sumArrayInRange(arr,left+1,right);     
     }
 }
+
+bool isAlphanumeric(std::string s){
+    if(s.length() == 0){
+        return true;
+    } else if(isalpha(s[0]) || isdigit(s[0])){
+        return isAlphanumeric(s.substr(1));
+    } else {
+        return false;
+    }
+}

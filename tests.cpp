@@ -32,3 +32,12 @@ TEST_CASE("Task C"){
     sum = sumArray(arr, 2);
     CHECK(sum == 1);
 }
+
+TEST_CASE("Task D"){
+    std::string test = "KLMN 8-7-6";
+    CHECK(isAlphanumeric(test) == false);
+    test = "!!254";
+    CHECK(isAlphanumeric(test) == false);
+    test = "ABC123";
+    CHECK(isAlphanumeric(test) == true);
+}
